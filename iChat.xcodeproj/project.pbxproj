@@ -12,6 +12,11 @@
 		84DDBD66279090D6004386DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD65279090D6004386DB /* ViewController.swift */; };
 		84DDBD6B279090DA004386DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DDBD6A279090DA004386DB /* Assets.xcassets */; };
 		84DDBD6E279090DA004386DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDBD6C279090DA004386DB /* LaunchScreen.storyboard */; };
+		84DDBD7627909F60004386DB /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7527909F60004386DB /* UIButton + Extension.swift */; };
+		84DDBD782790A1D4004386DB /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD772790A1D4004386DB /* UIFont + Extension.swift */; };
+		84DDBD7A2790A29A004386DB /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD792790A29A004386DB /* UIColor + Extension.swift */; };
+		84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */; };
+		84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		84DDBD6A279090DA004386DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DDBD6D279090DA004386DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DDBD6F279090DA004386DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DDBD7527909F60004386DB /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		84DDBD772790A1D4004386DB /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		84DDBD792790A29A004386DB /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				84DDBD61279090D6004386DB /* AppDelegate.swift */,
 				84DDBD63279090D6004386DB /* SceneDelegate.swift */,
 				84DDBD65279090D6004386DB /* ViewController.swift */,
+				84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */,
+				84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */,
+				84DDBD792790A29A004386DB /* UIColor + Extension.swift */,
+				84DDBD772790A1D4004386DB /* UIFont + Extension.swift */,
+				84DDBD7527909F60004386DB /* UIButton + Extension.swift */,
 				84DDBD6A279090DA004386DB /* Assets.xcassets */,
 				84DDBD6C279090DA004386DB /* LaunchScreen.storyboard */,
 				84DDBD6F279090DA004386DB /* Info.plist */,
@@ -134,9 +149,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DDBD782790A1D4004386DB /* UIFont + Extension.swift in Sources */,
 				84DDBD66279090D6004386DB /* ViewController.swift in Sources */,
 				84DDBD62279090D6004386DB /* AppDelegate.swift in Sources */,
+				84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */,
+				84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */,
+				84DDBD7A2790A29A004386DB /* UIColor + Extension.swift in Sources */,
 				84DDBD64279090D6004386DB /* SceneDelegate.swift in Sources */,
+				84DDBD7627909F60004386DB /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
