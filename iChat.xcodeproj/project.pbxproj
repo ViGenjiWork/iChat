@@ -12,6 +12,7 @@
 		845B588E279707DB00A543B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588D279707DB00A543B6 /* LoginViewController.swift */; };
 		845B589027970FEE00A543B6 /* SetupProfileViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588F27970FEE00A543B6 /* SetupProfileViewContoller.swift */; };
 		845B58922797129300A543B6 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B58912797129300A543B6 /* AddPhotoView.swift */; };
+		845B5894279725C700A543B6 /* SegmentedControl + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B5893279725C700A543B6 /* SegmentedControl + Extensions.swift */; };
 		84DDBD62279090D6004386DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD61279090D6004386DB /* AppDelegate.swift */; };
 		84DDBD64279090D6004386DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD63279090D6004386DB /* SceneDelegate.swift */; };
 		84DDBD66279090D6004386DB /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD65279090D6004386DB /* AuthViewController.swift */; };
@@ -32,6 +33,7 @@
 		845B588D279707DB00A543B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		845B588F27970FEE00A543B6 /* SetupProfileViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewContoller.swift; sourceTree = "<group>"; };
 		845B58912797129300A543B6 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		845B5893279725C700A543B6 /* SegmentedControl + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extensions.swift"; sourceTree = "<group>"; };
 		84DDBD5E279090D6004386DB /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DDBD61279090D6004386DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DDBD63279090D6004386DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				84DDBD7527909F60004386DB /* UIButton + Extension.swift */,
 				84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */,
 				84DDBD832790BA3F004386DB /* StackView + Extension.swift */,
+				845B5893279725C700A543B6 /* SegmentedControl + Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				84DDBD66279090D6004386DB /* AuthViewController.swift in Sources */,
 				84DDBD62279090D6004386DB /* AppDelegate.swift in Sources */,
 				84DDBD822790B131004386DB /* ButtonFormView.swift in Sources */,
+				845B5894279725C700A543B6 /* SegmentedControl + Extensions.swift in Sources */,
 				84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */,
 				845B58922797129300A543B6 /* AddPhotoView.swift in Sources */,
 				84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */,
