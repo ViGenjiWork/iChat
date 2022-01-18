@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845B588A2796E13900A543B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B58892796E13900A543B6 /* SignUpViewController.swift */; };
+		845B588C2796E53100A543B6 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588B2796E53100A543B6 /* OneLineTextField.swift */; };
+		845B588E279707DB00A543B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588D279707DB00A543B6 /* LoginViewController.swift */; };
+		845B589027970FEE00A543B6 /* SetupProfileViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588F27970FEE00A543B6 /* SetupProfileViewContoller.swift */; };
+		845B58922797129300A543B6 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B58912797129300A543B6 /* AddPhotoView.swift */; };
 		84DDBD62279090D6004386DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD61279090D6004386DB /* AppDelegate.swift */; };
 		84DDBD64279090D6004386DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD63279090D6004386DB /* SceneDelegate.swift */; };
-		84DDBD66279090D6004386DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD65279090D6004386DB /* ViewController.swift */; };
+		84DDBD66279090D6004386DB /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD65279090D6004386DB /* AuthViewController.swift */; };
 		84DDBD6B279090DA004386DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DDBD6A279090DA004386DB /* Assets.xcassets */; };
 		84DDBD6E279090DA004386DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDBD6C279090DA004386DB /* LaunchScreen.storyboard */; };
 		84DDBD7627909F60004386DB /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7527909F60004386DB /* UIButton + Extension.swift */; };
@@ -17,13 +22,20 @@
 		84DDBD7A2790A29A004386DB /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD792790A29A004386DB /* UIColor + Extension.swift */; };
 		84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */; };
 		84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */; };
+		84DDBD822790B131004386DB /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD812790B131004386DB /* ButtonFormView.swift */; };
+		84DDBD842790BA3F004386DB /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDBD832790BA3F004386DB /* StackView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845B58892796E13900A543B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		845B588B2796E53100A543B6 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		845B588D279707DB00A543B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		845B588F27970FEE00A543B6 /* SetupProfileViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewContoller.swift; sourceTree = "<group>"; };
+		845B58912797129300A543B6 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		84DDBD5E279090D6004386DB /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DDBD61279090D6004386DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DDBD63279090D6004386DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84DDBD65279090D6004386DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84DDBD65279090D6004386DB /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		84DDBD6A279090DA004386DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DDBD6D279090DA004386DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DDBD6F279090DA004386DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +44,8 @@
 		84DDBD792790A29A004386DB /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		84DDBD812790B131004386DB /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		84DDBD832790BA3F004386DB /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +80,40 @@
 			children = (
 				84DDBD61279090D6004386DB /* AppDelegate.swift */,
 				84DDBD63279090D6004386DB /* SceneDelegate.swift */,
-				84DDBD65279090D6004386DB /* ViewController.swift */,
-				84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */,
-				84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */,
-				84DDBD792790A29A004386DB /* UIColor + Extension.swift */,
-				84DDBD772790A1D4004386DB /* UIFont + Extension.swift */,
-				84DDBD7527909F60004386DB /* UIButton + Extension.swift */,
+				845B588F27970FEE00A543B6 /* SetupProfileViewContoller.swift */,
+				84DDBD65279090D6004386DB /* AuthViewController.swift */,
+				845B58892796E13900A543B6 /* SignUpViewController.swift */,
+				845B588D279707DB00A543B6 /* LoginViewController.swift */,
+				84DDBD802790A981004386DB /* Extensions */,
 				84DDBD6A279090DA004386DB /* Assets.xcassets */,
 				84DDBD6C279090DA004386DB /* LaunchScreen.storyboard */,
 				84DDBD6F279090DA004386DB /* Info.plist */,
 			);
 			path = iChat;
+			sourceTree = "<group>";
+		};
+		84DDBD7F2790A975004386DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				84DDBD7B2790A7A4004386DB /* UILabel + Extension.swift */,
+				84DDBD792790A29A004386DB /* UIColor + Extension.swift */,
+				84DDBD772790A1D4004386DB /* UIFont + Extension.swift */,
+				84DDBD7527909F60004386DB /* UIButton + Extension.swift */,
+				84DDBD7D2790A84C004386DB /* UIImageView + Extension.swift */,
+				84DDBD832790BA3F004386DB /* StackView + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		84DDBD802790A981004386DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				845B58912797129300A543B6 /* AddPhotoView.swift */,
+				84DDBD812790B131004386DB /* ButtonFormView.swift */,
+				845B588B2796E53100A543B6 /* OneLineTextField.swift */,
+				84DDBD7F2790A975004386DB /* UIKit */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,14 +186,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845B588C2796E53100A543B6 /* OneLineTextField.swift in Sources */,
+				845B588A2796E13900A543B6 /* SignUpViewController.swift in Sources */,
 				84DDBD782790A1D4004386DB /* UIFont + Extension.swift in Sources */,
-				84DDBD66279090D6004386DB /* ViewController.swift in Sources */,
+				84DDBD66279090D6004386DB /* AuthViewController.swift in Sources */,
 				84DDBD62279090D6004386DB /* AppDelegate.swift in Sources */,
+				84DDBD822790B131004386DB /* ButtonFormView.swift in Sources */,
 				84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */,
+				845B58922797129300A543B6 /* AddPhotoView.swift in Sources */,
 				84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */,
 				84DDBD7A2790A29A004386DB /* UIColor + Extension.swift in Sources */,
 				84DDBD64279090D6004386DB /* SceneDelegate.swift in Sources */,
 				84DDBD7627909F60004386DB /* UIButton + Extension.swift in Sources */,
+				845B589027970FEE00A543B6 /* SetupProfileViewContoller.swift in Sources */,
+				845B588E279707DB00A543B6 /* LoginViewController.swift in Sources */,
+				84DDBD842790BA3F004386DB /* StackView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +338,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_NOTICES = YES;
+				ASSETCATALOG_WARNINGS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2ZR2YRU7M;
@@ -321,7 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_NOTICES = YES;
+				ASSETCATALOG_WARNINGS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H2ZR2YRU7M;
