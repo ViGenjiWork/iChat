@@ -15,7 +15,7 @@
 		8426C5442799F7CE00DA4BB9 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426C5432799F7CE00DA4BB9 /* WaitingChatCell.swift */; };
 		8426C5462799FB2100DA4BB9 /* SelfConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426C5452799FB2100DA4BB9 /* SelfConfigurationCell.swift */; };
 		8426C5492799FD7900DA4BB9 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426C5482799FD7800DA4BB9 /* SectionHeader.swift */; };
-		8426C54B2799FD9B00DA4BB9 /* MChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426C54A2799FD9B00DA4BB9 /* MChatModel.swift */; };
+		8426C54B2799FD9B00DA4BB9 /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426C54A2799FD9B00DA4BB9 /* MChat.swift */; };
 		845B588A2796E13900A543B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B58892796E13900A543B6 /* SignUpViewController.swift */; };
 		845B588C2796E53100A543B6 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588B2796E53100A543B6 /* OneLineTextField.swift */; };
 		845B588E279707DB00A543B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B588D279707DB00A543B6 /* LoginViewController.swift */; };
@@ -48,7 +48,7 @@
 		8426C5432799F7CE00DA4BB9 /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		8426C5452799FB2100DA4BB9 /* SelfConfigurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfigurationCell.swift; sourceTree = "<group>"; };
 		8426C5482799FD7800DA4BB9 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
-		8426C54A2799FD9B00DA4BB9 /* MChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChatModel.swift; sourceTree = "<group>"; };
+		8426C54A2799FD9B00DA4BB9 /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
 		845B58892796E13900A543B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		845B588B2796E53100A543B6 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		845B588D279707DB00A543B6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		8426C54C2799FDA000DA4BB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8426C54A2799FD9B00DA4BB9 /* MChatModel.swift */,
+				8426C54A2799FD9B00DA4BB9 /* MChat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				84DDBD822790B131004386DB /* ButtonFormView.swift in Sources */,
 				845B5894279725C700A543B6 /* SegmentedControl + Extensions.swift in Sources */,
 				84DDBD7C2790A7A4004386DB /* UILabel + Extension.swift in Sources */,
-				8426C54B2799FD9B00DA4BB9 /* MChatModel.swift in Sources */,
+				8426C54B2799FD9B00DA4BB9 /* MChat.swift in Sources */,
 				845B58922797129300A543B6 /* AddPhotoView.swift in Sources */,
 				84DDBD7E2790A84C004386DB /* UIImageView + Extension.swift in Sources */,
 				8426C5462799FB2100DA4BB9 /* SelfConfigurationCell.swift in Sources */,
@@ -439,6 +439,7 @@
 				INFOPLIST_FILE = iChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,7 +451,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,6 +468,7 @@
 				INFOPLIST_FILE = iChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +480,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
