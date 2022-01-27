@@ -26,14 +26,14 @@ class ListViewController: UIViewController {
         }
     }
     
-    var dataSourse: UICollectionViewDiffableDataSource<Section, MChat>?
+    var dataSource: UICollectionViewDiffableDataSource<Section, MChat>?
     var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
         setupSearchBar()
-        createDataSourse()
+        createDataSource()
         reloadData()
     }
     
@@ -67,7 +67,7 @@ class ListViewController: UIViewController {
         snapShot.appendSections([.waitingChats, .activeChats])
         snapShot.appendItems(waitingChats, toSection: .waitingChats)
         snapShot.appendItems(activeChats, toSection: .activeChats)
-        dataSourse?.apply(snapShot, animatingDifferences: true)
+        dataSource?.apply(snapShot, animatingDifferences: true)
     }
     
     
@@ -75,28 +75,22 @@ class ListViewController: UIViewController {
 
 // MARK: - DataSource
 extension ListViewController {
+
     
-    private func configure<T: SelfConfiguringCell>(cellType: T.Type, with value: MChat, for indexPath: IndexPath) -> T {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellType.reuseId, for: indexPath) as? T else { fatalError("Unable to dequeue \(cellType)")}
-        
-        cell.configure(with: value)
-        return cell
-    }
-    
-    private func createDataSourse() {
-        dataSourse = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell in
+    private func createDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell in
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section kind") }
             switch section {
             case .activeChats:
-                return self.configure(cellType: ActiveChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: ActiveChatCell.self, with: chat, for: indexPath)
             case .waitingChats:
-                return self.configure(cellType: WaitingChatCell.self, with: chat, for: indexPath)
+                return self.configure(collectionView: collectionView, cellType: WaitingChatCell.self, with: chat, for: indexPath)
             }
         })
         
-        dataSourse?.supplementaryViewProvider = {
+        dataSource?.supplementaryViewProvider = {
             (collectionView, kind, indexPath) in
-            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseId, for: indexPath) as? SectionHeader else { fatalError("Can't create new section heaeder") }
+            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseId, for: indexPath) as? SectionHeader else { fatalError("Can't create new section header") }
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section kind")}
             sectionHeader.configure(text: section.description(), font: .laoSangamMN20(), textColor: #colorLiteral(red: 0.5725490196, green: 0.5725490196, blue: 0.5725490196, alpha: 1) )
             return sectionHeader
@@ -177,6 +171,7 @@ extension ListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
     }
+    
 }
 
 // MARK: - SwiftUI

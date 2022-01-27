@@ -20,9 +20,14 @@ class WaitingChatCell: UICollectionViewCell, SelfConfiguringCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupConstraints()
-        self.backgroundColor = .yellow
         self.layer.cornerRadius = 4
         self.clipsToBounds = true
+    }
+    
+    
+    func configure<U>(with value: U) where U : Hashable {
+        guard let chat: MChat = value as? MChat else { return }
+        friendImageView.image = UIImage(named: chat.userImageString)
     }
     
     required init?(coder: NSCoder) {
