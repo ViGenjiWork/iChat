@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewContoller: UIViewController {
     
-    let welcomeLabel = UILabel(text: "Welcome wack!", font: .avenir26())
+    let welcomeLabel = UILabel(text: "Welcome Back!", font: .avenir26())
     
     let loginWithLabel = UILabel(text: "Login with")
     let orLabel = UILabel(text: "or")
@@ -17,26 +17,54 @@ class LoginViewContoller: UIViewController {
     let passwordLabel = UILabel(text: "Password")
     let needAnAccountLabel = UILabel(text: "Need an account?")
     
-    let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
+  
     
     let emailTextField = OneLineTextField(font: .avenir20())
     let passwordTextField = OneLineTextField(font: .avenir20())
     
+    let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .buttonDark())
-    let signInButton: UIButton = {
+    let signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign in", for: .normal)
         button.setTitleColor(.buttonRed(), for: .normal)
         button.titleLabel?.font = .avenir20()
         return button
     }()
+    
+    weak var delegate: AuthNavigationDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         googleButton.customizeGoogleButton()
         view.backgroundColor = .white
         setupConstraints()
+        
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
+    
+    @objc private func loginButtonTapped() {
+        AuthService.shared.login(email: emailTextField.text, password: passwordTextField.text) { result in
+            switch result {
+                
+            case .success(_):
+                self.showAlert(with: "Success", and: "You successfully signed in") {
+                    self.present(MainTabBarController(), animated: true, completion: nil)
+                }
+            case .failure(let error):
+                self.showAlert(with: "Failure", and: error.localizedDescription)
+            }
+        }
+    }
+    
+    @objc private func signUpButtonTapped() {
+        self.dismiss(animated: true) {
+            self.delegate?.toSignUpVC()
+        }
+    }
+    
+
     
 }
 
@@ -52,8 +80,8 @@ extension LoginViewContoller {
         loginButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         let stackView = UIStackView(arrangedSubviews: [loginWithView, orLabel, emailStackView, passwordStackView, loginButton], axis: .vertical, spacing: 40)
         
-        signInButton.contentHorizontalAlignment = .leading
-        let bottomStackView = UIStackView(arrangedSubviews: [needAnAccountLabel, signInButton], axis: .horizontal, spacing: 10)
+        signUpButton.contentHorizontalAlignment = .leading
+        let bottomStackView = UIStackView(arrangedSubviews: [needAnAccountLabel, signUpButton], axis: .horizontal, spacing: 10)
         bottomStackView.alignment = .firstBaseline
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
