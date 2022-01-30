@@ -48,9 +48,18 @@ class LoginViewContoller: UIViewController {
         AuthService.shared.login(email: emailTextField.text, password: passwordTextField.text) { result in
             switch result {
                 
-            case .success(_):
+            case .success(let user):
                 self.showAlert(with: "Success", and: "You successfully signed in") {
-                    self.present(MainTabBarController(), animated: true, completion: nil)
+                    FirestoreService.shared.getUserData(user: user) { (result) in
+                        switch result {
+                        case .success(let muser):
+                            let mainTabBar = MainTabBarController(currentUser: muser)
+                            mainTabBar.modalPresentationStyle = .fullScreen
+                            self.present(mainTabBar, animated: true, completion: nil)
+                        case .failure(_):
+                            self.present(SetupProfileViewContoller(currentUser: user), animated: true, completion: nil)
+                        }
+                    }
                 }
             case .failure(let error):
                 self.showAlert(with: "Failure", and: error.localizedDescription)

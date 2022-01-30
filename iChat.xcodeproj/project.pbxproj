@@ -13,8 +13,8 @@
 		3030F7FB27A56173005115A2 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030F7FA27A56173005115A2 /* AuthError.swift */; };
 		3030F7FE27A5B01D005115A2 /* AuthNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030F7FD27A5B01D005115A2 /* AuthNavigationDelegate.swift */; };
 		3030F80027A5B2CA005115A2 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030F7FF27A5B2CA005115A2 /* FirestoreService.swift */; };
+		3043A75227A6802C00A6098C /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3043A75127A6802C00A6098C /* users.json */; };
 		30B5922727A5BBFE00FB2386 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B5922627A5BBFE00FB2386 /* UserError.swift */; };
-		30D1EA1327A1875600F41690 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D1EA1227A1875600F41690 /* users.json */; };
 		30D1EA1527A1885000F41690 /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1EA1427A1885000F41690 /* MUser.swift */; };
 		30D1EA1727A194FD00F41690 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1EA1627A194FD00F41690 /* UserCell.swift */; };
 		30D1EA1A27A1968600F41690 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1EA1927A1968600F41690 /* UIViewController+Extension.swift */; };
@@ -61,8 +61,8 @@
 		3030F7FA27A56173005115A2 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		3030F7FD27A5B01D005115A2 /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
 		3030F7FF27A5B2CA005115A2 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		3043A75127A6802C00A6098C /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = iChat/users.json; sourceTree = SOURCE_ROOT; };
 		30B5922627A5BBFE00FB2386 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
-		30D1EA1227A1875600F41690 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = iChat/users.json; sourceTree = SOURCE_ROOT; };
 		30D1EA1427A1885000F41690 /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
 		30D1EA1627A194FD00F41690 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		30D1EA1927A1968600F41690 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -253,7 +253,7 @@
 				30D1EA2527A310F100F41690 /* GoogleService-Info.plist */,
 				8408D545279881E700BA4D39 /* activeChats.json */,
 				8408D5472798852200BA4D39 /* waitingChats.json */,
-				30D1EA1227A1875600F41690 /* users.json */,
+				3043A75127A6802C00A6098C /* users.json */,
 			);
 			path = iChat;
 			sourceTree = "<group>";
@@ -348,7 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D1EA1327A1875600F41690 /* users.json in Resources */,
+				3043A75227A6802C00A6098C /* users.json in Resources */,
 				84DDBD6E279090DA004386DB /* LaunchScreen.storyboard in Resources */,
 				8408D546279881E700BA4D39 /* activeChats.json in Resources */,
 				84DDBD6B279090DA004386DB /* Assets.xcassets in Resources */,
